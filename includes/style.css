@@ -1,0 +1,90 @@
+/*
+
+Julien Roger http://www.julienroger.com
+November 6, 2011
+Last updated: November 6, 2011
+
+Structure
+
+// Header
+
+// Nav bar
+
+// Container
+
+
+
+// Content
+
+
+// Sub footer
+
+// Footer
+
+
+
+*/
+
+body {padding: 0; margin: 0;}
+
+div#top-nav {width: 100%; height: 1.5em; text-align: left; position: relative; font-size: 2em; background: #C41E3A; color: #ffffff; margin: 0; padding: .1em 0 0em 0;}
+div#inner-nav {width: 62%; height: 62%; right: 0; bottom:0; position: absolute; text-align: center; font-size: .5em; background: #933646; color: #ffffff; margin: 0; padding: 0em 0 0em 0; border-top: 1px solid; border-left: 1px solid; border-color: #E2788B;}
+
+div#container {margin: 0 auto; width: 62%; }
+
+div#form {}
+
+div#footer {width: 100%; bottom: 0; position: absolute; text-align: center; font-size: 1em;}
+
+div#footer-end {width: 62%; margin: 0 auto; position: relative; background: #933646; color: #FFFFFF; border-top: 1px solid; border-color: #7F0A1F;}
+
+
+
+/* Formatting for the registration password strength indicator */
+.green {color: #00CC66}
+.red {color: #FF0000}
+
+#iSM {margin:0 0 0 0;padding:0;height:5px;}
+#iSM ul {border:0;margin:4px 0 0 0;padding:0;list-style-type:none;text-align:center;}
+#iSM ul li {display:block;float:left;text-align:center;padding:1px 0 0 0;margin:0;height:5px;}
+#iWeak,#iMedium,#iStrong {width:64px;font-size:.2em;color:#adadad;text-align:center;padding:2px;background-color:#F1F1F1;display:block;}
+#iWeak,#iMedium {border-right:solid 1px #DEDEDE;}
+#iMedium {width:64px;}
+#iMedium,#iStrong {border-left-width:0;}
+
+div.strong #iWeak, div.strong #iMedium, div.strong #iStrong  {
+	background: #00CC66;
+	color: #00CC66;
+}
+
+div.medium #iWeak, div.medium #iMedium {
+	background: #FFFF99;
+	color: #FFFF99;
+}
+
+div.medium #iWeak, div.medium #iMedium {
+	background: #FFFF99;
+	color: #FFFF99;
+}
+
+div.weak #iWeak {
+	background: #FF0000;
+	color: #FF0000;
+}
+
+div.strong #iStrong, div.medium #iMedium, div.weak #iWeak {
+	color:#000;
+}
+
+
+
+// red: 9D1939
+// yellow: EEBD31
+// blue: 11335D
+
+
+// cardinal: C41E3A
+// Dark Cardinal: 7F0A1F
+// Dark Dull Cardinal: 933646
+// Light dull cardinal: E2788B
+// Cardinal Scheme: http://colorschemedesigner.com/#5w11Tr6qew0w0
