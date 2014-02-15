@@ -14,7 +14,7 @@ include("db.php");
 include("validator.php");
 
   require_once('recaptchalib.php');
-  $privatekey = "6LdtvMkSAAAAALFvVrZW4MUMAVYoRqBMJ5R6FXtw";
+  $privatekey = "***";
   $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],
@@ -70,13 +70,13 @@ include("validator.php");
         mysql_query($query) or die(mysql_error());
 		
 		// Email Portion
-		$reset_url = "http://www.julienroger.com/jupiter/forgot_pass.php?email=" . $rawemail . "&token=" . $token ;
+		$reset_url = "***/forgot_pass.php?email=" . $rawemail . "&token=" . $token ;
 		
 		$to=$email;
 		$subject="Project Jupiter Password Reset"; // Your subject
 		// From
-		$header = 'From: jupiter@julienroger.com' . "\r\n" .
-		'Reply-To: jupiter@julienroger.com' . "\r\n" .
+		$header = 'From: ***' . "\r\n" .
+		'Reply-To: ***' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		//add code for selecting $userid and $pass for user table for the input $email_to.
 		// Your message

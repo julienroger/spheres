@@ -35,7 +35,7 @@ function cookieMonster($email)
 	$expiretime = time()+3600*24*7;
 	
 	// Sets the cookie
-	setcookie("cm", $cookietoken, $expiretime, "/", ".inthespheres.com" , 0, 1) or die("Could not send cm cookie.");
+	setcookie("cm", $cookietoken, $expiretime, "/", "***.com" , 0, 1) or die("Could not send cm cookie.");
 }
 
 function destroyCM($email, $cookietoken)
@@ -51,7 +51,7 @@ function ohhai($email)
 	$email = rawurlencode($email);
 	$expiretime = time()+3600*24*7*52;
 	// Sets the cookie
-	setcookie("um", $email, $expiretime, "/", ".inthespheres.com" , 0, 1) or die("Could not send um cookie.");
+	setcookie("um", $email, $expiretime, "/", "***.com" , 0, 1) or die("Could not send um cookie.");
 }
 
 function validCookie($email, $cookietoken)
@@ -156,7 +156,7 @@ function logout_user()
 	$_SESSION = array(); // Destroy all of the session variables
 	session_destroy();
 	// Invalidate cookie token
-	setcookie("cm", "0", time()-3600*24*7, "/", ".inthespheres.com" , 0, 1) or die("Could not destroy logout cookie.");
+	setcookie("cm", "0", time()-3600*24*7, "/", "***.com" , 0, 1) or die("Could not destroy logout cookie.");
 }
 
 

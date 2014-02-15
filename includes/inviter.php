@@ -51,14 +51,14 @@ if(existingUser($email) == 1) {
     mysql_query($query) or die(mysql_error());
 	
 	// Email Portion
-	$reg_url = "http://inthespheres.com/register.php?email=" . rawurlencode($email) . "&token=" . $regtoken ;
+	$reg_url = "***.com/register.php?email=" . rawurlencode($email) . "&token=" . $regtoken ;
 	
 	$to=$email;
 	$subject="Invitation to Spheres!"; // Your subject
 	
 	// From
-	$header = 'From: julienroger@gmail.com' . "\r\n" .
-	'Reply-To: julienroger@gmail.com' . "\r\n" .
+	$header = 'From: ***' . "\r\n" .
+	'Reply-To: ***' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
 	// Your message
